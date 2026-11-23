@@ -9,6 +9,11 @@ A desktop learning prototype for a probabilistic soft keyboard. It demonstrates:
 - Per-key touch calibration
 - Live visualization of Gaussian contours, 2σ rectangles and posterior candidates
 
+Mobile keyboard input is subject to errors that are generally attributed to “fat finger typing”.
+I built this because i was interested in learning how keyboards work on smartphones. As soon as I heard that the keyboards are actually dynamic, i fell into a rabbit hole. I referenced google research page about their keyboards and how they use overlapping 2D Gaussian probability field combined with a Finite-State Transducer (FST) and Neural Language Model (NN-LM) to dynamically shift effective hitboxes based on typing context. And so I wanted to build something similar myself.
+
+Future work includes rendering this on a smartphone screen rather than desktop. I used tkinter here on desktop for ease of building the ui, it's lightweight and good enough for this prototype... and because i'm comfortable mostly with python. I plan on working on building a platform independent app version so it can be loaded onto a handheld device for more accurate usage.
+
 ## Project structure
 
 ```text
